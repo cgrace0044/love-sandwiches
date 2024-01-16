@@ -27,5 +27,11 @@ def get_sales_data():
     data_str = input("Enter your data here: ")
     print(f"The data provided is {data_str}")
 
+    sales_data = data_str.split(",")
+    validate_data(sales_data)
+
 
 get_sales_data()
+
+def validate_data(values):
+    print(values)
